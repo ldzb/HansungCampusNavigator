@@ -9,21 +9,26 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "홈"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func recentButtonTapped(_ sender: UIButton) {
+        guard let title = sender.currentTitle else { return }
+        moveToMapTab(placeTitle: title)
     }
-    */
-
+    
+    private func moveToMapTab(placeTitle: String) {
+        guard let tabBarController = self.tabBarController else { return }
+        
+        if let navigationController = tabBarController.viewControllers?[1] as? UINavigationController,
+           let mapViewController = navigationController.viewControllers.first as? MapViewController {
+            mapViewController.selectedPlaceTitle = placeTitle
+        }
+        
+        tabBarController.selectedIndex = 1
+    }
 }
