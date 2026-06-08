@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6758282FD65DC00093D219 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6758272FD65DBF0093D219 /* FavoritesManager.swift */; };
+		6D67582A2FD671870093D219 /* CampusModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6758292FD671870093D219 /* CampusModels.swift */; };
+		6D67582C2FD671E30093D219 /* CampusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67582B2FD671E30093D219 /* CampusData.swift */; };
+		6D67582E2FD6721B0093D219 /* RecentSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67582D2FD6721B0093D219 /* RecentSearchManager.swift */; };
+		6D6758302FD695C00093D219 /* CampusPathData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67582F2FD695C00093D219 /* CampusPathData.swift */; };
 		6DCBCA6D2FBF020E00BDA76E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBCA6C2FBF020E00BDA76E /* HomeViewController.swift */; };
 		6DCBCA6F2FBF035200BDA76E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBCA6E2FBF035200BDA76E /* MapViewController.swift */; };
 		6DCBCA712FBF036B00BDA76E /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBCA702FBF036B00BDA76E /* FavoritesViewController.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D6758272FD65DBF0093D219 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		6D6758292FD671870093D219 /* CampusModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusModels.swift; sourceTree = "<group>"; };
+		6D67582B2FD671E30093D219 /* CampusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusData.swift; sourceTree = "<group>"; };
+		6D67582D2FD6721B0093D219 /* RecentSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchManager.swift; sourceTree = "<group>"; };
+		6D67582F2FD695C00093D219 /* CampusPathData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusPathData.swift; sourceTree = "<group>"; };
 		6DCBCA6C2FBF020E00BDA76E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6DCBCA6E2FBF035200BDA76E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6DCBCA702FBF036B00BDA76E /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -108,13 +118,18 @@
 				8F3FE9572FBB134600830FA7 /* AppDelegate.swift */,
 				8F3FE9592FBB134600830FA7 /* SceneDelegate.swift */,
 				8F3FE95D2FBB134600830FA7 /* Main.storyboard */,
+				6D6758272FD65DBF0093D219 /* FavoritesManager.swift */,
 				6DCBCA6E2FBF035200BDA76E /* MapViewController.swift */,
 				6DCBCA702FBF036B00BDA76E /* FavoritesViewController.swift */,
 				6DCBCA722FBF038000BDA76E /* SettingsViewController.swift */,
 				6DCBCA6C2FBF020E00BDA76E /* HomeViewController.swift */,
+				6D6758292FD671870093D219 /* CampusModels.swift */,
+				6D67582B2FD671E30093D219 /* CampusData.swift */,
+				6D67582D2FD6721B0093D219 /* RecentSearchManager.swift */,
 				8F3FE9602FBB134A00830FA7 /* Assets.xcassets */,
 				8F3FE9622FBB134A00830FA7 /* LaunchScreen.storyboard */,
 				8F3FE9652FBB134A00830FA7 /* Info.plist */,
+				6D67582F2FD695C00093D219 /* CampusPathData.swift */,
 			);
 			path = HansungBoogi;
 			sourceTree = "<group>";
@@ -269,9 +284,14 @@
 			files = (
 				8F3FE9582FBB134600830FA7 /* AppDelegate.swift in Sources */,
 				6DCBCA732FBF038000BDA76E /* SettingsViewController.swift in Sources */,
+				6D67582E2FD6721B0093D219 /* RecentSearchManager.swift in Sources */,
+				6D6758302FD695C00093D219 /* CampusPathData.swift in Sources */,
+				6D67582A2FD671870093D219 /* CampusModels.swift in Sources */,
 				8F3FE95A2FBB134600830FA7 /* SceneDelegate.swift in Sources */,
+				6D6758282FD65DC00093D219 /* FavoritesManager.swift in Sources */,
 				6DCBCA6F2FBF035200BDA76E /* MapViewController.swift in Sources */,
 				6DCBCA712FBF036B00BDA76E /* FavoritesViewController.swift in Sources */,
+				6D67582C2FD671E30093D219 /* CampusData.swift in Sources */,
 				6DCBCA6D2FBF020E00BDA76E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -117,13 +117,12 @@ class SettingsViewController: UIViewController {
     }
 
     private func makeActionButton(title: String, action: Selector) -> UIButton {
-        var configuration = UIButton.Configuration.plain()
-        configuration.title = title
-        configuration.baseForegroundColor = .systemRed
-        configuration.contentInsets = NSDirectionalEdgeInsets(top: 14, leading: 16, bottom: 14, trailing: 16)
-
-        let button = UIButton(configuration: configuration)
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(.systemRed, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .regular)
         button.contentHorizontalAlignment = .leading
+        button.contentEdgeInsets = UIEdgeInsets(top: 14, left: 16, bottom: 14, right: 16)
         button.addTarget(self, action: action, for: .touchUpInside)
         return button
     }

@@ -70,29 +70,29 @@ struct CampusPathData {
         PathNode(
             id: "research_east_walk",
             coordinate: CLLocationCoordinate2D(
-                latitude: 37.5821900,
+                latitude: 37.5823000,
                 longitude: 127.0099300
             )
         ),
         PathNode(
             id: "research_front_walk",
             coordinate: CLLocationCoordinate2D(
-                latitude: 37.5821500,
-                longitude: 127.0096500
+                latitude: 37.5823115,
+                longitude: 127.00982414
             )
         ),
         PathNode(
             id: "west_spine_south",
             coordinate: CLLocationCoordinate2D(
                 latitude: 37.5819000,
-                longitude: 127.0097400
+                longitude: 127.0097200
             )
         ),
         PathNode(
             id: "west_spine_middle",
             coordinate: CLLocationCoordinate2D(
-                latitude: 37.5824500,
-                longitude: 127.0096500
+                latitude: 37.5826200,
+                longitude: 127.0096300
             )
         ),
         PathNode(
@@ -110,16 +110,30 @@ struct CampusPathData {
             )
         ),
         PathNode(
-            id: "cube_walk",
+            id: "cube_west_walk",
             coordinate: CLLocationCoordinate2D(
-                latitude: 37.5837700,
-                longitude: 127.0094300
+                latitude: 37.5837200,
+                longitude: 127.0091800
+            )
+        ),
+        PathNode(
+            id: "cube_south_walk",
+            coordinate: CLLocationCoordinate2D(
+                latitude: 37.5836400,
+                longitude: 127.0094200
+            )
+        ),
+        PathNode(
+            id: "cube_entry_walk",
+            coordinate: CLLocationCoordinate2D(
+                latitude: 37.5838600,
+                longitude: 127.0095000
             )
         ),
         PathNode(
             id: "center_cross_walk",
             coordinate: CLLocationCoordinate2D(
-                latitude: 37.5825500,
+                latitude: 37.5826200,
                 longitude: 127.0099500
             )
         ),
@@ -183,7 +197,7 @@ struct CampusPathData {
         PathNode(id: "jinri_node", coordinate: CLLocationCoordinate2D(latitude: 37.5830056, longitude: 127.0095493)),
         PathNode(id: "village_node", coordinate: CLLocationCoordinate2D(latitude: 37.5814749, longitude: 127.0100350)),
         PathNode(id: "haksong_node", coordinate: CLLocationCoordinate2D(latitude: 37.5833111, longitude: 127.0095215)),
-        PathNode(id: "research_node", coordinate: CLLocationCoordinate2D(latitude: 37.5821500, longitude: 127.0095500)),
+        PathNode(id: "research_node", coordinate: CLLocationCoordinate2D(latitude: 37.5823115, longitude: 127.00982414)),
         PathNode(id: "naksan_node", coordinate: CLLocationCoordinate2D(latitude: 37.5820891, longitude: 127.0113547)),
         PathNode(id: "woochon_node", coordinate: CLLocationCoordinate2D(latitude: 37.5830056, longitude: 127.0106048)),
         PathNode(id: "insung_node", coordinate: CLLocationCoordinate2D(latitude: 37.5819224, longitude: 127.0107715)),
@@ -195,7 +209,7 @@ struct CampusPathData {
         PathNode(id: "sangsang_node", coordinate: CLLocationCoordinate2D(latitude: 37.5827687, longitude: 127.01021762)),
         PathNode(id: "jiseon_node", coordinate: CLLocationCoordinate2D(latitude: 37.5820255, longitude: 127.0097580)),
         PathNode(id: "future_node", coordinate: CLLocationCoordinate2D(latitude: 37.5825885, longitude: 127.0107298)),
-        PathNode(id: "valley_node", coordinate: CLLocationCoordinate2D(latitude: 37.5840099, longitude: 127.00939697))
+        PathNode(id: "cube_node", coordinate: CLLocationCoordinate2D(latitude: 37.5840099, longitude: 127.00939697))
     ]
 
     static let edges: [PathEdge] = [
@@ -203,20 +217,21 @@ struct CampusPathData {
         PathEdge(from: "main_gate_inner", to: "future_south_east_walk"),
         PathEdge(from: "future_south_east_walk", to: "future_south_west_walk"),
         PathEdge(from: "future_south_west_walk", to: "sangsang_south_walk"),
+        PathEdge(from: "sangsang_south_walk", to: "center_cross_walk"),
         PathEdge(from: "sangsang_south_walk", to: "research_east_walk"),
         PathEdge(from: "research_east_walk", to: "research_front_walk"),
 
-        PathEdge(from: "research_front_walk", to: "west_spine_south"),
-        PathEdge(from: "research_front_walk", to: "west_spine_middle"),
+        PathEdge(from: "center_cross_walk", to: "west_spine_middle"),
+        PathEdge(from: "west_spine_middle", to: "west_spine_south"),
         PathEdge(from: "west_spine_middle", to: "west_spine_north"),
         PathEdge(from: "west_spine_north", to: "tamgu_west_walk"),
-        PathEdge(from: "tamgu_west_walk", to: "cube_walk"),
-        PathEdge(from: "west_spine_middle", to: "center_cross_walk"),
+        PathEdge(from: "tamgu_west_walk", to: "cube_west_walk"),
+        PathEdge(from: "cube_west_walk", to: "cube_south_walk"),
+        PathEdge(from: "cube_south_walk", to: "cube_entry_walk"),
         PathEdge(from: "center_cross_walk", to: "jinri_south_walk"),
         PathEdge(from: "jinri_south_walk", to: "haksong_south_walk"),
         PathEdge(from: "haksong_south_walk", to: "tamgu_west_walk"),
 
-        PathEdge(from: "center_cross_walk", to: "sangsang_south_walk"),
         PathEdge(from: "sangsang_south_walk", to: "woochon_west_walk"),
         PathEdge(from: "woochon_west_walk", to: "woochon_east_walk"),
         PathEdge(from: "future_south_east_walk", to: "naksan_entry_walk"),
@@ -229,7 +244,7 @@ struct CampusPathData {
         PathEdge(from: "jinri_south_walk", to: "jinri_node"),
         PathEdge(from: "haksong_south_walk", to: "haksong_node"),
         PathEdge(from: "tamgu_west_walk", to: "tamgu_node"),
-        PathEdge(from: "cube_walk", to: "valley_node", distanceMultiplier: 1.2),
+        PathEdge(from: "cube_entry_walk", to: "cube_node"),
         PathEdge(from: "research_front_walk", to: "research_node"),
         PathEdge(from: "west_spine_south", to: "jiseon_node"),
         PathEdge(from: "west_spine_south", to: "engineeringA_node"),
@@ -260,7 +275,7 @@ struct CampusPathData {
         "상상관": "sangsang_node",
         "지선관": "jiseon_node",
         "미래관": "future_node",
-        "상상밸리": "valley_node"
+        "상상큐브": "cube_node"
     ]
 
     private static let nodeByID: [String: PathNode] = Dictionary(
