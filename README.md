@@ -83,7 +83,7 @@ HansungBoogi
 └── Resources
     ├── CampusData.swift               # 하드코딩된 한성대 캠퍼스 메타데이터
     └── Main.storyboard
-
+````
 ---
 
 ## 💾 데이터 구조
@@ -123,6 +123,7 @@ struct Building {
     let longitude: Double
     let places: [Place]
 }
+````
 
 ---
 
