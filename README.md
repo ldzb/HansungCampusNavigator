@@ -125,7 +125,7 @@ struct PathNode {
 
 ### 1. 저장소를 Clone 합니다.
 ```bash
-git clone https://github.com/pangdasian/HansungCampusNavigator.git
+git clone [https://github.com/pangdasian/HansungCampusNavigator.git](https://github.com/ldzb/HansungCampusNavigator.git)
 ```
 
 ### 2. Xcode 프로젝트를 엽니다.
