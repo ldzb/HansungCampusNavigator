@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "icon-ios-20x20@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
@@ -21,6 +22,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "icon-ios-40x40@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -31,6 +33,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "icon-ios-40x40@3x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
@@ -86,7 +89,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Gemini_Generated_Image_o8k76vo8k76vo8k7.png",
+      "filename" : "icon-watchos-1024x1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
