@@ -121,6 +121,15 @@ struct PathNode {
 
 ---
 
+## 🎬 시연 영상
+
+| 핵심 시나리오 (홈 ➡️ 검색 ➡️ 경로 시각화 ➡️ 즐겨찾기) |
+| :---: |
+| [![HansungBoogi Video](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/9s9EkMi78GA) |
+| 👆 **위 버튼을 클릭하면 기능 시연 영상(YouTube)으로 이동합니다.** (3분 내외 소요) |
+
+---
+
 ## 🏃‍♂️ 실행 방법
 
 ### 1. 저장소를 Clone 합니다.
